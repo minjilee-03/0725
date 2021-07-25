@@ -23,3 +23,21 @@ b {
     font-weight: normal;
     text-decoration-line: none;
 }
+.wrap .header-wrap .header-container{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    height: 70px;
+    border: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    justify-content: center;
+}
+.header-wrap .container .logo{
+    width: 104px;
+    height: 39px;
+    border: 1px solid red;
+    background: url(https://www.noelohills.com/web/upload/noelo/common/logo-m.png) no-repeat;
+    background-size: cover;
+}
