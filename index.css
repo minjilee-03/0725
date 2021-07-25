@@ -21,9 +21,15 @@ b {
     padding: 0;
     font-style: normal;
     font-weight: normal;
+    color: black;
     text-decoration-line: none;
 }
-.wrap .header-wrap .header-container{
+.wrap{
+    width: 100%;
+    height: 5000px;
+    background-color: cadetblue;
+}
+.wrap .header-wrap{
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -34,10 +40,110 @@ b {
     flex-direction: row; 
     justify-content: center;
 }
+.wrap .header-wrap .header-container{
+    width: 100%;
+    height: 70px;
+    border: 1px solid red;
+}
 .header-wrap .container .logo{
     width: 104px;
     height: 39px;
-    border: 1px solid red;
     background: url(https://www.noelohills.com/web/upload/noelo/common/logo-m.png) no-repeat;
     background-size: cover;
+}
+.down {
+    background-color: white;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+.main-container{
+    width: 100%;
+}
+.main-container .main-visual{
+    width: 100%;
+    height: 560px;
+    background-color: rgb(255 245 214);
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.main-container .main-visual .container{
+    padding-top: 70px;
+}
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table{
+    padding-top: 25px;
+}
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table h2{
+    text-align: center;
+    color: #676d72;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table h2 .pc-br{
+    display: none;
+}
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table p{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 0;
+    color: #676d72;
+}
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table .shop-now {
+    width: auto;
+    text-align: center;
+}
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table .shop-now a{
+    height: 55px;
+    margin-top: 20px;
+    padding: 10 0px;
+    padding-right: 40px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #f9ce42;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/btn-more-visual-m.png) right center no-repeat;
+    background-size: auto 25px;
+}
+
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table .main-visual-txt-table .main-visual-slide-img{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.main-container .main-visual .container .main-visual-slick-slides 
+.main-visual-table .main-visual-txt-table .main-visual-slide-img img{
+    width: 230px;
+}
+.slick-dots {
+    position: absolute;
+    top: 410px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #ffcf42;
+}
+.slick-dots li button:before {
+    opacity: 100;
+    color: #fff;
 }
