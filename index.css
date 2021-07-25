@@ -29,12 +29,15 @@ b {
 
 .wrap {
     width: 100%;
-    height: 5000px;
+    height: auto;
+    overflow-x: hidden;
     background-color: white;
 }
-.container{
+
+.container {
     padding: 0 15px;
 }
+
 .wrap .header-wrap {
     width: 100%;
     position: fixed;
@@ -59,6 +62,7 @@ b {
     background-size: cover;
     margin: 15px auto;
 }
+
 .header-wrap .container .menu-trigger {
     z-index: 10;
     width: 50px;
@@ -68,7 +72,8 @@ b {
     position: relative;
     top: -60px;
 }
-.header-wrap .container .nav-wrap{
+
+.header-wrap .container .nav-wrap {
     width: 100px;
     height: auto;
     margin: 0;
@@ -78,22 +83,27 @@ b {
     float: right;
     right: -20px;
 }
-.header-wrap .container .nav-wrap .nav-cart{
+
+.header-wrap .container .nav-wrap::after {
+    clear: both;
+}
+
+.header-wrap .container .nav-wrap .nav-cart {
     margin-right: 23px;
     align-items: center;
     text-align: center;
 }
 
-.header-wrap .container .nav-wrap .nav-account{
+.header-wrap .container .nav-wrap .nav-account {
     margin: 0;
     align-items: center;
     text-align: center;
 }
 
-.header-wrap .container .nav-wrap .nav-icon .xi-2x{
+.header-wrap .container .nav-wrap .nav-icon .xi-2x {
     color: gray;
     font-weight: 200;
-    font-size:25px;
+    font-size: 25px;
 }
 
 .down {
@@ -102,7 +112,7 @@ b {
     -webkit-transition-timing-function: ease;
     transition-duration: 0.2s;
     transition-timing-function: ease;
-    box-shadow:0px 1px 5px rgb(0 0 0 / 10%);
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
 }
 
 .main-container {
@@ -176,6 +186,359 @@ b {
     width: 230px;
 }
 
+.main-container .promis {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 90px 0;
+}
+
+.main-container .promis .container .promis-tit {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-container .promis .container .promis-tit span {
+    width: 100%;
+    color: #f9ce42;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.main-container .promis .container .promis-tit strong {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #676d72;
+}
+
+.main-container .promis .container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-container .promis .container ul li {
+    width: 150px;
+    height: 150px;
+    padding-top: 140px;
+}
+
+.main-container .promis .container ul .promis-list-01 {
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss01-m.png) center top no-repeat;
+    background-size: auto 130px;
+}
+
+.main-container .promis .container ul .promis-list-02 {
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss02-m.png) center top no-repeat;
+    background-size: auto 130px;
+}
+
+.main-container .promis .container ul .promis-list-03 {
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss03-m.png) center top no-repeat;
+    background-size: auto 130px;
+}
+
+.main-container .promis .container ul .promis-list-04 {
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss04-m.png) center top no-repeat;
+    background-size: auto 130px;
+}
+
+.main-container .promis .container ul li dl dt {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-container .promis .container ul li dl dd {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.main-container .product {
+    padding: 0 0 100px;
+}
+
+.main-container .product .container .product-container .product-tit {
+    margin-left: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main-container .product .container .product-container .product-tit span {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: #f9ce42;
+    font-weight: 700;
+}
+
+.main-container .product .container .product-container .product-tit strong {
+    margin-top: 10px;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 500;
+    color: #676d72;
+}
+
+.main-container .product .container .product-item-container {
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-container .product .container .product-item-container .product-item-wrap {
+    width: 300px;
+    height: 500px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.main-container .product .container .product-item-container .product-item-wrap .product-item {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #fff5d6;
+}
+
+.main-container .product .container .product-item-container .product-item-wrap .product-item .product-item-img-box img {
+    width: 300px;
+    height: auto;
+}
+
+.main-container .product .container .product-item-container .product-item-wrap .product-item .product-item-txt-box .product-item-tit {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #676d72;
+
+    line-height: 30px;
+}
+
+.main-container .product .container .product-item-container .product-item-wrap .product-item .product-item-txt-box .product-item-info {
+
+    font-size: 13px;
+
+    color: #676d72;
+
+    font-weight: 400;
+
+    line-height: 20px;
+}
+
+.main-container .product .container .product-item-container .product-item-wrap .product-item .product-item-txt-box .product-price {
+
+    color: #676d72;
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+    line-height: 30px;
+}
+
+.main-container .product .container .product-item-container .product-item-wrap .product-item .product-see-more-btn {
+    display: inline-block;
+    height: 25px;
+    margin-top: 20px;
+    padding-right: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #f9ce42;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/btn-more-visual-m.png)right center no-repeat;
+    ;
+    background-size: auto 25px;
+}
+
+.main-container .about {
+    width: 100%;
+    height: auto;
+}
+
+.main-container .about .about-container-section {
+    height: auto;
+    width: 100%;
+}
+
+.main-container .about .about-container-section .about-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.main-container .about .about-container-section .about-section-01 .about-img-box {
+    width: 100%;
+    height: 260px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-main-info01-m.png)center center no-repeat;
+    background-size: auto 260px;
+}
+
+.main-container .about .about-container-section .about-section-02 .about-img-box {
+    width: 100%;
+    height: 260px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-main-info02-m.png)center center no-repeat;
+    background-size: auto 260px;
+}
+
+.main-container .about .about-container-section .about-section-03 .about-img-box {
+    width: 100%;
+    height: 260px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-main-info03-m.png)center center no-repeat;
+    background-size: auto 260px;
+}
+
+.main-container .about .about-container-section .about-section-04 .about-img-box {
+    width: 100%;
+    height: 260px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/bg-main-info04-m.png)center center no-repeat;
+    background-size: auto 260px;
+}
+
+.main-container .about .about-container-section .about-section .about-txt-box {
+    width: 100%;
+    text-align: center;
+}
+
+.main-container .about .about-container-section .about-section-01 .about-txt-box .about-icon {
+    margin-top: 24px;
+    padding-top: 75px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt011-m.png) center 0 no-repeat;
+    background-size: 87px auto;
+}
+
+.main-container .about .about-container-section .about-section-02 .about-txt-box .about-icon {
+    margin-top: 24px;
+    padding-top: 75px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt021-m.png) center 0 no-repeat;
+    background-size: 87px auto;
+}
+
+.main-container .about .about-container-section .about-section-03 .about-txt-box .about-icon {
+    margin-top: 24px;
+    padding-top: 75px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt031-m.png) center 0 no-repeat;
+    background-size: 87px auto;
+}
+
+.main-container .about .about-container-section .about-section-04 .about-txt-box .about-icon {
+    margin-top: 24px;
+    padding-top: 75px;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt041-m.png) center 0 no-repeat;
+    background-size: 87px auto;
+}
+
+.main-container .about .about-container-section .about-section .about-txt-box .about-read-more-btn {
+    height: 25px;
+    display: inline-block;
+    margin-top: 10px;
+    padding-right: 42px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #676d72;
+    letter-spacing: -0.45px;
+    font-weight: 400;
+    background: url(https://www.noelohills.com/web/upload/noelo/main/btn-read-more.png)right center no-repeat;
+    background-size: auto 25px;
+}
+
+.main-container .about .about-container-section .about-section .about-txt-box .about-tit {
+    color: #676d72;
+    letter-spacing: -0.45px;
+}
+
+.main-container .about .about-container-section .about-section .about-txt-box .about-info {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -1px;
+    color: #676d72;
+}
+
+.main-container .instagram {
+    padding-bottom: 100px;
+}
+
+.main-container .instagram .container .instagram-tit {
+    font-size: 21px;
+    line-height: 23px;
+    text-align: center;
+    color: #676d72;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #f9f9f9;
+}
+
+footer .container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+footer .container .footer-top-wrap {
+    padding: 40px 0 50px 0;
+}
+
+footer .container .footer-top-wrap .footer-menu li {
+    margin-top: 35px;
+    float: left;
+}
+
+footer .container .footer-top-wrap .footer-menu li::after {
+    clear: both;
+}
+
+footer .container .footer-top-wrap .footer-menu li:nth-child(1) {
+    width: 100%;
+}
+
+footer .container .footer-top-wrap .footer-menu li:nth-child(1) a {
+    color: #f9ce42;
+}
+
+footer .container .footer-top-wrap .footer-menu li:nth-child(2) {
+    width: 100%;
+    margin-top: 45px;
+}
+
+footer .container .footer-top-wrap .footer-menu li:nth-child(2) a {
+    color: #676d72;
+    letter-spacing: -0.45px;
+}
+
+footer .container .footer-top-wrap .footer-menu li:nth-child(3) {
+    width: 50%;
+    margin-top: 35px;
+    margin-right: 0;
+}
+
+footer .container .footer-top-wrap .footer-sns a span {
+    line-height: 70px;
+}
+
+footer .container .footer-top-wrap .footer-menu li a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.45px;
+}
+
+footer .container .footer-top-wrap .footer-copyright {
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 1;
+}
+
 .slick-dots {
     position: absolute;
     top: 440px;
@@ -198,4 +561,86 @@ b {
 .slick-dots li button:before {
     opacity: 100;
     color: #fff;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+@media (min-width:768px) {
+    .wrap .header-wrap {
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-wrap .container .nav-wrap .nav-icon .xi-2x {
+        color: gray;
+        font-weight: 200;
+        font-size: 35px;
+    }
+
+    .main-container .promis .container ul li {
+        width: 300px;
+        height: 150px;
+        padding-top: 140px;
+    }
+
+    .main-container .about .about-container-section {
+        height: auto;
+        width: 100%;
+        padding: 0 45px;
+    }
+
+    .main-container .about .about-container-section .about-section {
+        flex-direction: row;
+    }
+
+    .main-container .about .about-container-section .about-section .about-txt-box {
+        width: 100%;
+        text-align: left;
+    }
+
+    .main-container .about .about-container-section .about-section-01 .about-txt-box .about-icon {
+        background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt011-m.png) left 0 no-repeat;
+        margin-top: 24px;
+        padding-top: 75px;
+        background-size: 87px auto;
+    }
+
+    .main-container .about .about-container-section .about-section-02 .about-txt-box .about-icon {
+        margin-top: 24px;
+        padding-top: 75px;
+        background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt021-m.png) left 0 no-repeat;
+        background-size: 87px auto;
+    }
+
+    .main-container .about .about-container-section .about-section-03 .about-txt-box .about-icon {
+        margin-top: 24px;
+        padding-top: 75px;
+        background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt031-m.png) left 0 no-repeat;
+        background-size: 87px auto;
+    }
+
+    .main-container .about .about-container-section .about-section-04 .about-txt-box .about-icon {
+        margin-top: 24px;
+        padding-top: 75px;
+        background: url(https://www.noelohills.com/web/upload/noelo/main/main-info-txt041-m.png) left 0 no-repeat;
+        background-size: 87px auto;
+    }
+
+    .main-container .about .about-container-section .about-section-02 {
+        flex-direction: row-reverse;
+    }
+
+    .main-container .about .about-container-section .about-section-04 {
+        flex-direction: row-reverse;
+    }
 }
