@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
 ol,
 em,
 ul,
@@ -24,85 +26,133 @@ b {
     color: black;
     text-decoration-line: none;
 }
-.wrap{
+
+.wrap {
     width: 100%;
     height: 5000px;
-    background-color: cadetblue;
+    background-color: white;
 }
-.wrap .header-wrap{
+.container{
+    padding: 0 15px;
+}
+.wrap .header-wrap {
     width: 100%;
     position: fixed;
     z-index: 999;
     height: 70px;
-    border: 1px solid aqua;
     display: flex;
     align-items: center;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
 }
-.wrap .header-wrap .header-container{
-    width: 100%;
+
+.wrap .header-wrap .header-container {
+    position: relative;
+    width: 370px;
     height: 70px;
-    border: 1px solid red;
 }
-.header-wrap .container .logo{
+
+.header-wrap .container .logo {
     width: 104px;
     height: 39px;
     background: url(https://www.noelohills.com/web/upload/noelo/common/logo-m.png) no-repeat;
     background-size: cover;
+    margin: 15px auto;
 }
+.header-wrap .container .menu-trigger {
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background: url(https://www.noelohills.com/web/upload/noelo/common/btn-menu.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -60px;
+}
+.header-wrap .container .nav-wrap{
+    width: 100px;
+    height: auto;
+    margin: 0;
+    display: flex;
+    position: relative;
+    top: -100px;
+    float: right;
+    right: -20px;
+}
+.header-wrap .container .nav-wrap .nav-cart{
+    margin-right: 23px;
+    align-items: center;
+    text-align: center;
+}
+
+.header-wrap .container .nav-wrap .nav-account{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.header-wrap .container .nav-wrap .nav-icon .xi-2x{
+    color: gray;
+    font-weight: 200;
+    font-size:25px;
+}
+
 .down {
     background-color: white;
     -webkit-transition-duration: 0.2s;
     -webkit-transition-timing-function: ease;
     transition-duration: 0.2s;
     transition-timing-function: ease;
+    box-shadow:0px 1px 5px rgb(0 0 0 / 10%);
 }
-.main-container{
+
+.main-container {
     width: 100%;
 }
-.main-container .main-visual{
+
+.main-container .main-visual {
     width: 100%;
     height: 560px;
     background-color: rgb(255 245 214);
 }
+
 .clearfix::after {
     display: block;
     clear: both;
     content: "";
 }
-.main-container .main-visual .container{
+
+.main-container .main-visual .container {
     padding-top: 70px;
 }
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table{
+
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table {
     padding-top: 25px;
 }
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table h2{
+
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table h2 {
     text-align: center;
     color: #676d72;
     margin-bottom: 9px;
     font-size: 20px;
 }
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table h2 .pc-br{
+
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table h2 .pc-br {
     display: none;
 }
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table p{
+
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table p {
     text-align: center;
     font-size: 13px;
     margin-top: 0;
     color: #676d72;
 }
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table .shop-now {
+
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table .shop-now {
     width: auto;
     text-align: center;
 }
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table .shop-now a{
+
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table .shop-now a {
     height: 55px;
     margin-top: 20px;
     padding: 10 0px;
@@ -114,21 +164,21 @@ b {
     background-size: auto 25px;
 }
 
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table .main-visual-txt-table .main-visual-slide-img{
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table .main-visual-txt-table .main-visual-slide-img {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
 }
-.main-container .main-visual .container .main-visual-slick-slides 
-.main-visual-table .main-visual-txt-table .main-visual-slide-img img{
+
+.main-container .main-visual .container .main-visual-slick-slides .main-visual-table .main-visual-txt-table .main-visual-slide-img img {
     width: 230px;
 }
+
 .slick-dots {
     position: absolute;
-    top: 410px;
+    top: 440px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -139,10 +189,12 @@ b {
 .slick-dots li {
     margin: 0;
 }
+
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: #ffcf42;
 }
+
 .slick-dots li button:before {
     opacity: 100;
     color: #fff;
