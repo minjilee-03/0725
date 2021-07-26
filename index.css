@@ -586,7 +586,9 @@ footer .container .footer-top-wrap .footer-copyright {
         font-weight: 200;
         font-size: 35px;
     }
-
+    .main-container .main-visual .container .main-visual-slick-slides .main-visual-table h2 .pc-br {
+        display: block;
+    }
     .main-container .promis .container ul li {
         width: 300px;
         height: 150px;
