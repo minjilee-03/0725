@@ -282,7 +282,7 @@ b {
 }
 
 .main-container .product .container .product-item-container {
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0;
     display: flex;
@@ -765,6 +765,14 @@ footer .container .footer-top-wrap .footer-copyright {
         margin: 0;
     }
 
+    footer .container .footer-top-wrap .footer-copyright {
+        width: 500px;
+        margin-top: 50px;
+        font-size: 14px;
+        line-height: 1;
+        margin-left: 30px;
+    }
+
     .slick-dots {
         position: absolute;
         top: 490px;
@@ -788,6 +796,16 @@ footer .container .footer-top-wrap .footer-copyright {
         left: -250px;
     }
 
+    .container {
+        padding: 0 25px;
+    }
+
+    .main-container .promis .container ul li {
+        width: 25%;
+        height: 200px;
+        padding-top: 140px;
+    }
+
     .main-container .promis .container .promis-tit span {
         width: 100%;
         color: #f9ce42;
@@ -802,6 +820,14 @@ footer .container .footer-top-wrap .footer-copyright {
         line-height: 60px;
         font-weight: 500;
         color: #676d72;
+    }
+
+    .main-container .product .container {
+        display: flex;
+    }
+
+    .main-container .product .container .product-container {
+        width: 40%;
     }
 
     .main-container .product .container .product-container .product-tit span {
@@ -820,8 +846,49 @@ footer .container .footer-top-wrap .footer-copyright {
         color: #676d72;
     }
 
+    .main-container .product .container .product-item-container .product-item-wrap {
+        width: 40%;
+        height: 500px;
+        margin: 0;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+
+    .main-container .about .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .main-container .about .about-container-section .about-section .about-txt-box {
+        width: 100%;
+        text-align: left;
+    }
+
+    .main-container .about .about-container-section .about-section .about-txt-box .about-tit {
+        color: #676d72;
+        letter-spacing: -0.45px;
+        font-size: 25px;
+    }
+
+    .main-container .about .about-container-section .about-section .about-txt-box .about-info {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -1px;
+        color: #676d72;
+    }
+
     footer .container .footer-top-wrap .footer-menu li .footer-sns-li {
         display: block;
     }
 
+    .main-container .product .container .product-item-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
