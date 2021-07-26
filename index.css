@@ -532,6 +532,7 @@ footer .container .footer-top-wrap .footer-menu li a {
     line-height: 1;
     letter-spacing: -0.45px;
 }
+
 footer .container .footer-top-wrap .footer-menu li:nth-child(5) {
     width: 100%;
     margin-top: 45px;
@@ -587,6 +588,7 @@ footer .container .footer-top-wrap .footer-copyright {
         font-weight: 200;
         font-size: 35px;
     }
+
     .header-wrap .container .logo {
         width: 185px;
         height: 70px;
@@ -594,24 +596,26 @@ footer .container .footer-top-wrap .footer-copyright {
         background-size: cover;
         margin: 35px auto;
     }
+
     .header-wrap .container .menu-trigger {
-        
-z-index: 10;
-        
-width: 50px;
-        
-height: 50px;
-        
-background: url(https://www.noelohills.com/web/upload/noelo/common/btn-menu.png) center center no-repeat;
-        
-background-size: cover;
-        
-position: relative;
-        
-top: -100px;
-        
-left: -150px;
+
+        z-index: 10;
+
+        width: 50px;
+
+        height: 50px;
+
+        background: url(https://www.noelohills.com/web/upload/noelo/common/btn-menu.png) center center no-repeat;
+
+        background-size: cover;
+
+        position: relative;
+
+        top: -100px;
+
+        left: -150px;
     }
+
     .header-wrap .container .nav-wrap {
         width: 100px;
         height: auto;
@@ -620,19 +624,23 @@ left: -150px;
         position: relative;
         top: -140px;
         float: right;
-        right: -170px;
+        right: -250px;
     }
+
     .main-container .main-visual {
         width: 100%;
         height: 610px;
         background-color: rgb(255 245 214);
     }
-    .main-container .main-visual .container .main-visual-slick-slides .main-visual-table{
+
+    .main-container .main-visual .container .main-visual-slick-slides .main-visual-table {
         padding-top: 80px;
     }
+
     .main-container .main-visual .container .main-visual-slick-slides .main-visual-table h2 .pc-br {
         display: block;
     }
+
     .main-container .promis .container ul li {
         width: 50%;
         height: 200px;
@@ -689,21 +697,27 @@ left: -150px;
     .main-container .about .about-container-section .about-section-04 {
         flex-direction: row-reverse;
     }
+
     .main-container .promis .container ul .promis-list-01 {
         background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss01.png) center top no-repeat;
     }
+
     .main-container .promis .container ul .promis-list-02 {
         background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss02.png) center top no-repeat;
     }
+
     .main-container .promis .container ul .promis-list-03 {
         background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss03.png) center top no-repeat;
     }
+
     .main-container .promis .container ul .promis-list-04 {
         background: url(https://www.noelohills.com/web/upload/noelo/main/bg-promiss04.png) center top no-repeat;
     }
+
     .main-container .promis .container ul li dl {
         padding-top: 50px;
     }
+
     .slick-dots {
         position: absolute;
         top: 490px;
@@ -714,7 +728,19 @@ left: -150px;
         text-align: center;
     }
 }
-@media(min-width:992px){
+
+@media(min-width:992px) {
+    .header-wrap .container .menu-trigger {
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        background: url(https://www.noelohills.com/web/upload/noelo/common/btn-menu.png) center center no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -100px;
+        left: -250px;
+    }
+
     .main-container .promis .container .promis-tit span {
         width: 100%;
         color: #f9ce42;
@@ -722,6 +748,7 @@ left: -150px;
         font-size: 15px;
         letter-spacing: 5px;
     }
+
     .main-container .promis .container .promis-tit strong {
         width: 100%;
         font-size: 35px;
@@ -729,6 +756,7 @@ left: -150px;
         font-weight: 500;
         color: #676d72;
     }
+
     .main-container .product .container .product-container .product-tit span {
         width: 100%;
         color: #f9ce42;
@@ -736,6 +764,7 @@ left: -150px;
         font-size: 15px;
         letter-spacing: 5px;
     }
+
     .main-container .product .container .product-container .product-tit strong {
         width: 100%;
         font-size: 30px;
