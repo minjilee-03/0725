@@ -625,6 +625,9 @@ footer .container .footer-top-wrap .footer-copyright {
         float: right;
         right: -250px;
     }
+    .header-wrap .container .nav-wrap::after {
+        clear: both;
+    }
 
     .main-container .main-visual {
         width: 100%;
